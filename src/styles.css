@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+/* =========================================
+   COLLEGE 360 - NAVIGATION ARROWS
+   ========================================= */
+
+
+/* =========================================
+   FORWARD ARROW
+   Points STRAIGHT FORWARD
+   ========================================= */
+
+.navigation-arrow {
+  width: 70px !important;
+  height: 100px !important;
+
+  background: white !important;
+
+  opacity: 0.95;
+
+  cursor: pointer;
+
+  /* Straight forward arrow */
+  clip-path: polygon(
+    50% 0%,
+    100% 35%,
+    68% 35%,
+    68% 100%,
+    32% 100%,
+    32% 35%,
+    0% 35%
+  );
+
+  transform: perspective(200px) rotateX(55deg);
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================================
+   BACKWARD ARROW
+   Points STRAIGHT BACKWARD
+   ========================================= */
+
+.back-navigation-arrow {
+  width: 70px !important;
+  height: 100px !important;
+
+  background: white !important;
+
+  opacity: 0.95;
+
+  cursor: pointer;
+
+  /* Straight backward arrow */
+  clip-path: polygon(
+    50% 100%,
+    100% 65%,
+    68% 65%,
+    68% 0%,
+    32% 0%,
+    32% 65%,
+    0% 65%
+  );
+
+  transform: perspective(200px) rotateX(55deg);
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================================
+   HOVER EFFECT
+   ========================================= */
+
+.navigation-arrow:hover,
+.back-navigation-arrow:hover {
+  opacity: 1;
+}
